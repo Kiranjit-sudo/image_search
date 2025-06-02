@@ -1,1 +1,6 @@
 streamlit
+scikit-learn
+faiss-cpu
+pandas
+torchvision
+transformers
