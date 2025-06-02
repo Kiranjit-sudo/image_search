@@ -175,7 +175,8 @@ if st.button("Search Images"):
                     # st.markdown(f"- Result {i+1}: {load_indexed_image_paths[idx]} (Similarity: {distances[0][i]:.4f})")
                     # Display the image
                     st.markdown(f"Image {i+1}")
-                    st.image(load_indexed_image_paths[idx])
+                    st.markdown(load_indexed_image_paths[idx])
+                    # st.image(load_indexed_image_paths[idx])
                     st.markdown(f"(Similarity: {distances[0][i]:.4f})")
                     # st.markdown(f"Caption: {df.iloc[idx]['caption']}")
                     st.markdown("---")
