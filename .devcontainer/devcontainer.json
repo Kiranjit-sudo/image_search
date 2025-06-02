@@ -6,7 +6,10 @@
     "codespaces": {
       "openFiles": [
         "README.md",
-        "streamlit_app.py"
+        //"streamlit_app.py"
+        "app.py",
+        "new_faiss_index.bin",
+        "new_indexed_image_paths.pkl"
       ]
     },
     "vscode": {
