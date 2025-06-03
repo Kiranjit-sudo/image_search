@@ -145,7 +145,7 @@ load_faiss_index, load_indexed_image_paths = load_embeddings()
     # # Return top N results
     # return similarities[:top_n]
 
-df = pd.read_csv('captions_for_testimages.csv')
+df = pd.read_csv('/workspaces/image_search/captions_for_testimages.csv')
 
 # User input
 user_query = st.text_input(
