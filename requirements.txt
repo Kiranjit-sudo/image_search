@@ -4,3 +4,4 @@ faiss-cpu
 pandas
 torchvision
 transformers
+Pillow
