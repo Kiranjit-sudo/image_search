@@ -183,7 +183,7 @@ if st.button("Search Images"):
                     # files = os.listdir('testimages')
                     # for file in files:
                     #     st.markdown(file)
-                    st.markdown(os.path.join('testimages', df.iloc[idx]['filename'])
+                    st.markdown(os.path.join('testimages', df.iloc[idx]['filename']))
                     st.image(Image.open(image_path))
                     st.markdown(f"(Similarity: {distances[0][i]:.4f})")
                     st.markdown(f"Caption: {df.iloc[idx]['filename']}")
