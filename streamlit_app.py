@@ -178,16 +178,16 @@ if st.button("Search Images"):
                     st.markdown(f"Image {i+1}")
                     # st.markdown(load_indexed_image_paths[idx])
                     # st.image(load_indexed_image_paths[idx])
-                    image_path="/testimages/" + df.iloc[idx]['filename']
-                    st.markdown(image_path)
+                    # image_path="/testimages/" + df.iloc[idx]['filename']
+                    # st.markdown(image_path)
                     # files = os.listdir('testimages')
                     # for file in files:
                     #     st.markdown(file)
                     st.markdown(os.path.join('testimages', df.iloc[idx]['filename']))
                     st.image(Image.open(os.path.join('testimages', df.iloc[idx]['filename'])))
                     st.markdown(f"(Similarity: {distances[0][i]:.4f})")
-                    st.markdown(f"Caption: {df.iloc[idx]['filename']}")
-                    st.markdown(f"Caption: {df.iloc[idx]['caption']}")
+                    # st.markdown(f"Caption: {df.iloc[idx]['filename']}")
+                    st.markdown(f"Caption: {df.iloc[idx]['caption']} with a similarity score of {distances[0][i]:.4f} when comapred to the query {user_query})
                     st.markdown("---")
                     # st.image(image, caption='Enter any caption here')
                 else:
