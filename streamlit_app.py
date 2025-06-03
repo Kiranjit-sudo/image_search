@@ -183,7 +183,7 @@ if st.button("Search Images"):
                     # st.image(image, caption='Enter any caption here')
                 else:
                     st.markdown(f"- Result {i+1}: Invalid index {idx}")
-            # if top_results:
+            # if top_results: /workspaces/image_search/testimages/0001.jpg
             #     # Display results in columns for better layout
             #     cols = st.columns(TOP_N_RESULTS) # Create columns for each result
 

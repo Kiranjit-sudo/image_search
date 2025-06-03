@@ -9,7 +9,8 @@
         //"streamlit_app.py"
         "app.py",
         "new_faiss_index.bin",
-        "new_indexed_image_paths.pkl"
+        "new_indexed_image_paths.pkl",
+        "captions_for_testimages.csv"
       ]
     },
     "vscode": {
