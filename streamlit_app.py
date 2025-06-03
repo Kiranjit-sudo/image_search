@@ -178,7 +178,7 @@ if st.button("Search Images"):
                     st.markdown(f"Image {i+1}")
                     st.markdown(load_indexed_image_paths[idx])
                     # st.image(load_indexed_image_paths[idx])
-                    image_path="testimages"+ "\\" + df.iloc[idx]['filename']
+                    image_path="/workspaces/image_search/testimages/" + df.iloc[idx]['filename']
                     st.markdown(image_path)
                     st.image(Image.open(image_path))
                     st.markdown(f"(Similarity: {distances[0][i]:.4f})")

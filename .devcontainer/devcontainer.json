@@ -10,7 +10,8 @@
         "app.py",
         "new_faiss_index.bin",
         "new_indexed_image_paths.pkl",
-        "captions_for_testimages.csv"
+        "captions_for_testimages.csv",
+        "testimages"
       ]
     },
     "vscode": {
