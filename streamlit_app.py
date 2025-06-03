@@ -145,7 +145,7 @@ load_faiss_index, load_indexed_image_paths = load_embeddings()
     # # Return top N results
     # return similarities[:top_n]
 
-# df = pd.read_csv('image_captions.csv')
+df = pd.read_csv('captions_for_testimages.csv')
 
 # User input
 user_query = st.text_input(
@@ -178,7 +178,8 @@ if st.button("Search Images"):
                     st.markdown(load_indexed_image_paths[idx])
                     # st.image(load_indexed_image_paths[idx])
                     st.markdown(f"(Similarity: {distances[0][i]:.4f})")
-                    # st.markdown(f"Caption: {df.iloc[idx]['caption']}")
+                    st.markdown(f"Caption: {df.iloc[idx]['filename']}")
+                    st.markdown(f"Caption: {df.iloc[idx]['caption']}")
                     st.markdown("---")
                     # st.image(image, caption='Enter any caption here')
                 else:
